@@ -1,0 +1,16 @@
+{
+  "name": "carbon-fsm",
+  "version": "0.0.7",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "coverage": "istanbul cover ./test/test",
+    "test": "node ./test/test"
+  },
+  "keywords": [],
+  "author": "HydroCarbons <hydrocarbons@outlook.com> (https://github.com/hydrocarbons)",
+  "license": "Apache License 2.0"
+}
