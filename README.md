@@ -56,12 +56,26 @@
       // App Specific Data
       _data: {},
 
+      // Specify initial state of the FSM
       _initialState: "STATE_A",
-      // State and Event table
-      // format
+
+      // State & Event Table
+      // Format:
       //   STATE_NAME : { STATE_DATA }
-      //      STATE_DATA = on is main function to execute on entering the state
-      //                 = TRANSITIONS = { EVENT_NAME : STATE_NAME }
+      //   where STATE_DATA = "on" is a function executed by FSM on entering the state
+      //                    = type is type of the state. It can be "timer" or "final"
+      //                    = TRANSITION_MAP = { EVENT_NAME : STATE_NAME }
+      //
+      //   "timer" State (Special state type)                
+      //                    = FSM executes "on" function and then wait for "timer_duration"
+      //                      before auto transitioning to state specified in "timer_over"
+      //                    => timer_over can have a state name or
+      //                             $last_state or $initial_state
+      //
+      //  "final" State (Special state type)
+      //                    = FSM stops processing events after executing "on" function
+      //                      of final state.
+      //
       STATE_A: {
           // State processing function
           on: async function(data) {
@@ -101,7 +115,7 @@
 ```
 
 # Examples
-Check out data pipeline processing and a generic FSM app in the examples (https://github.com/HydroCarbons/carbon-fsm/tree/master/examples) folder.
+Check out data pipeline processing and a generic FSM app in the examples folder (https://github.com/HydroCarbons/carbon-fsm/tree/master/examples).
 
 # Contributing
 You can contribute to this project with issues or pull requests.
