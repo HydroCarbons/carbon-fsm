@@ -9,21 +9,21 @@
 ` npm install carbon-fsm --save `
 
 ```javascript
-const { FiniteStateMachine } = require("carbon-fsm");
+    const { FiniteStateMachine } = require("carbon-fsm");
 ```
 ### Create an instance of Carbon-FSM and pass your finite state machine config as argument
 ```javascript
-var FSM = new FiniteStateMachine(myAppConfig)
+    var FSM = new FiniteStateMachine(myAppConfig)
 ```
 
 ### Dispatch your application event to transition to next state as per the your application engine
 ```javascript
-  await FSM.send("EVENT_NAME")
+    await FSM.send("EVENT_NAME")
 ```
 
 ### Display Current State of the FSM
 ```javascript
-  FSM.currentState()
+    FSM.currentState()
 ```
 
 ### Display your application data's state in the FSM
@@ -33,17 +33,17 @@ var FSM = new FiniteStateMachine(myAppConfig)
 
 ### Display state transition history in the FSM
 ```javascript
-FSM.displayHistory()
+    FSM.displayHistory()
 ```
 
 ### Display state transition diagram in the FSM
 ```javascript
-FSM.displayStateTransitionDiagram()
+    FSM.displayStateTransitionDiagram()
 ```
 
 ### Display current of the FSM repeatedly
 ```javascript
-FSM.displayCurrentState( frequencyInMillseconds )
+    FSM.displayCurrentState( frequencyInMillseconds )
 ```
 
 ## Application Engine Configuration
