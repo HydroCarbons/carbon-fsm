@@ -1,7 +1,7 @@
 {
   "name": "carbon-fsm",
   "version": "0.0.7",
-  "description": "",
+  "description": "Carbon FSM is a async enabled lightweight but powerful finite state machine for javascript/nodejs",
   "main": "index.js",
   "directories": {
     "test": "test"
