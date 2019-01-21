@@ -6,8 +6,10 @@
 
 ## Carbon FSM is a lightweight but powerful finite state machine for JavaScript/nodejs
 
+## Installation
 ` npm install carbon-fsm --save `
 
+## Usage
 ```javascript
     const { FiniteStateMachine } = require("carbon-fsm");
 ```
@@ -97,3 +99,12 @@
     }
 
 ```
+
+# Examples
+Check out data pipeline processing and a generic FSM app in the examples folder.
+
+# Contributing
+You can contribute to this project with issues or pull requests.
+
+# Contact
+If you have any ideas, feedback, requests or bug reports, you can reach me at hydrocarbons@outlook.com.
