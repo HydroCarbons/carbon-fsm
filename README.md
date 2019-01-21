@@ -1,4 +1,5 @@
 # carbon-fsm
+![Carbon Icon](https://raw.githubusercontent.com/HydroCarbons/carbon-fsm/master/CarbonFSMx256.png)
 
 ## Travis CI
 [![Build Status](https://travis-ci.com/HydroCarbons/carbon-fsm.svg?branch=master)](https://travis-ci.com/HydroCarbons/carbon-fsm)
