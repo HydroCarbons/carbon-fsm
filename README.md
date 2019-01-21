@@ -37,11 +37,34 @@
 ### Display state transition history in the FSM
 ```javascript
     FSM.displayHistory()
+
+    e.g.
+
+    [History]
+    ................................................................................
+          0.00                          (fsm-init) => [ STATE_A ]
+          3.01                          EVENT_C @ STATE_A => [ STATE_C ]
+          3.01                          EVENT_F @ STATE_C => [ STATE_F ]
+          4.01                          timer_over @ STATE_F => [ STATE_C ]
+          4.01                          EVENT_ERROR @ STATE_C => [ STATE_ERROR ]
+          5.01                          timer_over @ STATE_ERROR => [ STATE_C ]
+          5.01                          EVENT_A @ STATE_C => [ STATE_A ]
+          14.23                         EVENT_FINAL @ STATE_A => [ STATE_FINAL ]
+    ................................................................................
+
 ```
 
 ### Display state transition diagram in the FSM
 ```javascript
+
     FSM.displayStateTransitionDiagram()
+
+    e.g.
+
+      [State Transition Diagram]
+
+      ((fsm-init)) => STATE_A  (EVENT_C) => STATE_C  (EVENT_F) => STATE_F  (timer_over) => STATE_C  (EVENT_ERROR) => STATE_ERROR  (timer_over) => STATE_C  (EVENT_A) => STATE_A  (EVENT_FINAL) => STATE_FINAL
+
 ```
 
 ### Display current of the FSM repeatedly
