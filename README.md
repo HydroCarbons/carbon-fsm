@@ -101,7 +101,7 @@
 ```
 
 # Examples
-Check out data pipeline processing and a generic FSM app in the examples folder.
+Check out data pipeline processing and a generic FSM app in the examples (https://github.com/HydroCarbons/carbon-fsm/tree/master/examples) folder.
 
 # Contributing
 You can contribute to this project with issues or pull requests.
