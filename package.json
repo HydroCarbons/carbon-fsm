@@ -1,6 +1,6 @@
 {
   "name": "carbon-fsm",
-  "version": "0.0.8",
+  "version": "0.0.81",
   "description": "Carbon FSM is a async enabled lightweight but powerful finite state machine for javascript/nodejs",
   "main": "index.js",
   "directories": {
@@ -12,5 +12,8 @@
   },
   "keywords": [],
   "author": "HydroCarbons <hydrocarbons@outlook.com> (https://github.com/hydrocarbons)",
-  "license": "Apache License 2.0"
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "assert": "^1.4.1"
+  }
 }

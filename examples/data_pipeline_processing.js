@@ -72,7 +72,7 @@ function DataPipelineApp() {
           fsm_data._data.current = num
           next = await FSM.send("next")
         }
-      } while (next !== "FINAL")
+      } while (next !== "OK_STATE_FINAL")
 
       console.log( "Final State :", FSM.currentState() )
       console.log( "Data" )
