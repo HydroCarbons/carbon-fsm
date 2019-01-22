@@ -5,7 +5,7 @@
 var assert = require('assert')
 
 var { FiniteStateMachine } = require('../src/index.js')
-var { PromiseWrapper } = require('../src/PromiseWrapper.js')
+var { PromiseWrapper } = require('../src/promiseWrapper.js')
 
 ////////////////////////////////////////////////////////////////////////////////
 function DataPipelineApp() {
